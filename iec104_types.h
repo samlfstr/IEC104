@@ -176,16 +176,16 @@ struct iec_type13 {
     unsigned char iv :1; // valid/invalid
 };
 
-// M_IT_NA_1 - Ò£Âö£¬µçÄÜÀÛ»ýÁ¿
+// M_IT_NA_1 - Ò£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û»ï¿½ï¿½ï¿½
 struct iec_type15 {
-	unsigned long mv; //ÊýÖµ
-	unsigned char sqNum:5;//ÐòºÅ
+	unsigned long mv; //ï¿½ï¿½Öµ
+	unsigned char sqNum:5;//ï¿½ï¿½ï¿½
 	unsigned char CY:1;
 	unsigned char CA:1;
 	unsigned char IV:1;
 };
 
-// M_ME_ND_1 - ²»´øÆ·ÖÊµÄ¹éÒ»»¯Ò£²â
+// M_ME_ND_1 - ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ÊµÄ¹ï¿½Ò»ï¿½ï¿½Ò£ï¿½ï¿½
 struct iec_type21 {
 	short mv; // normalized value
 };
@@ -505,7 +505,12 @@ struct iec_apdu {
 
         struct {
             unsigned short ioa16;
-            unsigned char ioa8;
+            unsigned ch
+            
+            
+            
+            
+            ar ioa8;
             iec_type34 obj;
         } nsq34[1];
 

@@ -80,9 +80,9 @@ class iec104_class
     static const unsigned int M_ME_NA_1 = 9; // normalized value
     static const unsigned int M_ME_NB_1 = 11; // scaled value
     static const unsigned int M_ME_NC_1 = 13; // floating point
-    static const unsigned int M_IT_NA_1 = 15; // µçÄÜÀÛ»ýÁ¿integrated totals
-	static const unsigned int M_ME_ND_1 = 21; // ²»´øÆ·ÖÊµÄ¹éÒ»»¯Ò£²â°ü
-    static const unsigned int M_SP_TB_1 = 30; // single-point information with time tag
+    static const unsigned int M_IT_NA_1 = 15; 
+	static const unsigned int M_ME_ND_1 = 21;
+    static const unsigned int M_SP_TB_1 = 30; // single-point information with time ta
     static const unsigned int M_DP_TB_1 = 31; // double-point information with time tag
     static const unsigned int M_ST_TB_1 = 32; // step position information with time tag
     static const unsigned int M_BO_TB_1 = 33; // bitstring of 32 bits with time tag
@@ -141,8 +141,8 @@ class iec104_class
     void packetReadyTCP(); // user called, when packet ready to be read from tcp connection
 
     void solicitGI();  // General Interrogation
-	void solicitIntegratedTotal();//ÕÙ»½µçÄÜÁ¿
-	void ReadIntegratedTotal();//¶ÁµçÄÜÁ¿
+	void solicitIntegratedTotal();//ï¿½Ù»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	void ReadIntegratedTotal();//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void setSecondaryIP( char * ip );
     char * getSecondaryIP();
     void setSecondaryAddress( int addr );
@@ -179,7 +179,7 @@ private:
     const int t1_startdtact;
 
 	//Big/little endian reverse
-	void reverse( char* first, int size );//ÍøÂç×Ö½ÚÐòÄæÐòÓÃº¯Êý
+	void reverse( char* first, int size );//ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½
 
 
     protected:
@@ -189,7 +189,7 @@ private:
 
     bool TxOk; // ready to transmit state (STARTDTCON received)
     unsigned GIObjectCnt; // contador de objetos da GI
-	unsigned ITObjectCnt; // µçÄÜÀÛ»ýÁ¿¼ÆÊý
+	unsigned ITObjectCnt; // ï¿½ï¿½ï¿½ï¿½ï¿½Û»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	bool bITreceived;
 
